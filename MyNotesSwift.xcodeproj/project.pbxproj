@@ -13,6 +13,8 @@
 		B8408444198D817500F46ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8408442198D817500F46ECD /* Main.storyboard */; };
 		B8408446198D817500F46ECD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8408445198D817500F46ECD /* Images.xcassets */; };
 		B8408452198D817500F46ECD /* MyNotesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8408451198D817500F46ECD /* MyNotesSwiftTests.swift */; };
+		B89F70C8198D8296007EF35C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F70C7198D8296007EF35C /* Note.swift */; };
+		B89F70CA198D82C3007EF35C /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F70C9198D82C3007EF35C /* NoteStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B840844B198D817500F46ECD /* MyNotesSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNotesSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8408450198D817500F46ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8408451198D817500F46ECD /* MyNotesSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesSwiftTests.swift; sourceTree = "<group>"; };
+		B89F70C7198D8296007EF35C /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B89F70C9198D82C3007EF35C /* NoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				B840843C198D817500F46ECD /* AppDelegate.swift */,
 				B840843E198D817500F46ECD /* MasterViewController.swift */,
 				B8408440198D817500F46ECD /* DetailViewController.swift */,
+				B89F70C7198D8296007EF35C /* Note.swift */,
+				B89F70C9198D82C3007EF35C /* NoteStore.swift */,
 				B8408442198D817500F46ECD /* Main.storyboard */,
 				B8408445198D817500F46ECD /* Images.xcassets */,
 				B840843A198D817500F46ECD /* Supporting Files */,
@@ -214,6 +220,8 @@
 				B8408441198D817500F46ECD /* DetailViewController.swift in Sources */,
 				B840843F198D817500F46ECD /* MasterViewController.swift in Sources */,
 				B840843D198D817500F46ECD /* AppDelegate.swift in Sources */,
+				B89F70CA198D82C3007EF35C /* NoteStore.swift in Sources */,
+				B89F70C8198D8296007EF35C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +407,7 @@
 				B8408457198D817500F46ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8408458198D817500F46ECD /* Build configuration list for PBXNativeTarget "MyNotesSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +416,7 @@
 				B840845A198D817500F46ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
