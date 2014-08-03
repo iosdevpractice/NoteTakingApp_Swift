@@ -49,6 +49,7 @@ class MasterViewController: UITableViewController {
             let indexPath = self.tableView.indexPathForSelectedRow()
             let note = notes[indexPath.row]
             (segue.destinationViewController as DetailViewController).note = note
+            navigationItem.backBarButtonItem = UIBarButtonItem(title: "Notes", style: .Plain, target: nil, action: nil)
             
         } else if segue.identifier == "addNote" {
             
