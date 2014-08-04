@@ -27,7 +27,7 @@ class Note: NSObject, NSCoding {
     var title = content
         let start = title.startIndex
         let end = find(title, "\n")
-        if end {
+        if end != nil {
             title = title[start..<end!]
         }
         return title
@@ -35,7 +35,7 @@ class Note: NSObject, NSCoding {
     
     // MARK: - Initialization
     
-    init() {
+    override init() {
         content = ""
         modificationDate = NSDate()
     }
@@ -47,7 +47,7 @@ class Note: NSObject, NSCoding {
         aCoder.encodeObject(modificationDate, forKey:noteModificationDateKey)
     }
     
-    init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder!) {
         content = aDecoder.decodeObjectForKey(noteContentKey) as String
         modificationDate = aDecoder.decodeObjectForKey(noteModificationDateKey) as NSDate
         super.init()

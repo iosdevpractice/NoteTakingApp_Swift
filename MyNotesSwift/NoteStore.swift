@@ -16,7 +16,7 @@ class NoteStore: NSObject {
     
     // MARK: - Initialization
     
-    init() {
+    override init() {
         super.init()
         
         let notesData = NSData(contentsOfURL:savePath())
